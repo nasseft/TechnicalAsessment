@@ -3,4 +3,11 @@
 
 var findSpecies;
 
-
+let black={age:5,species:'dog'}
+function findSpecies(arr) {
+    let arr1=[]
+    for (let i=0 ; i<arr.lengh;i++){
+        arr1.push(arr[i].species)
+    }
+    return arr1;
+}

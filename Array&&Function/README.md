@@ -23,10 +23,13 @@
 
 2. Write a sentence in plain English describing how `square(square(15))` is
    evaluated.
+   15*15=225
+   so square (square(15))= 225*225=50625
 
 3. Rename `square`'s `num` parameter in your above code to `monkey`, and
    rename the uses of that parameter in the body to `monkey` as well. Will the
    function `square` still work? Why or why not?
+   yes the function 'square' still work because the parameter can change but the function stay working 
 
 4. What is wrong with the following definitions of `square`? Write a sentence or
    two describing the issue(s); then, try copying the erroneous examples into a
@@ -38,14 +41,19 @@
    function square(monkey) {
      return x * x;
    }
+   function square(monkey) {
+    return monkey * monkey;
+   }
 
    function square(5) {
      return 5 * 5;
    }
+   you can not write a number in a parameter 
 
    function square("x") {
      return "x" * "x";
    }
+   you can not write a string in a double quotation
    ```
 
 5. Fix the invalid syntax in the following functions (you can copy and paste these
@@ -69,13 +77,23 @@
 
    ```js
    function square(x){return x*x;}
+   funtion square (x) {
+    return x * x ;
+   }
 
    function square (x) { return x *x;
    }
+   function square (x) { 
+    return x * x;
+   }
+ 
 
    function square(x)
    {
    return x * x;
+   }
+   function square (x) {
+    return x * x;
    }
    ```
 
@@ -83,7 +101,7 @@
 
   ```js
   function cube(x) {
-    // your code here
+    return x * x * x ;
   }
   ```
 
@@ -94,7 +112,7 @@
   ```js
   // don't forget the parameters!
   function fullName() {
-    // your code here
+    return firstName+" "+lastName;
   }
   fullName("John", "Doe") // => "John Doe"
   ```
@@ -115,7 +133,35 @@
     function perimeterRect(l, w) {
       return 2 * (l + w);
     }
+    function Rectangle(l,w) {
+      let area =l*w;
+      let perim =2*(l+w);
+      return Area=${area}, Perimeter=${perim};
+    }
+    function square (s) {
+      let a = s*s
+      let p = 4*s
+      return return Area=${area}, Perimeter=${perim};
+    }
+    function Parallelogram(l,h,w) {
+      let a = l*h
+      let p = (2*l)+(2*w);
+      return `Area=${area}, Perimeter=${perim}` ;
+    }
+    function Trapezoid(h,s1,s2,b1,b2) {
+      let a = 1/2 h (b1+b2)
+      let p = s1+s2+b1+b2
+      return `Area=${area}, Perimeter=${perim}` ;
+    }
+    function Traingle(h,b,s1,s2) {
+    let A=(b*h)/2
+    let P=s1+s2+b
+    return `Area=${area}, Perimeter=${perim}` ;
+    }
+
     ```
+
+
 
     **NOTE:** JavaScript provides some nifty mathematical functions and
     constants built into the language that you'll need for this exercise. The
